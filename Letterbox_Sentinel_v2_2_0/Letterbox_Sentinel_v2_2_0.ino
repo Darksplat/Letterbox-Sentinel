@@ -122,7 +122,7 @@ const unsigned long DEEP_SLEEP_BOOT_GRACE_MS = 10000UL;        // allow MQTT/OTA
 const char* DEVICE_ID = "letterbox_sentinel";
 const char* DEVICE_NAME = "Letterbox Sentinel";
 const char* FIRMWARE_VERSION = "2.2.0";
-const char* DEVICE_MANUFACTURER = "DIY";
+const char* DEVICE_MANUFACTURER = "Darksplat";
 const char* DEVICE_MODEL = "Wemos D1 Mini Letterbox Sentinel";
 
 // ============================================================
