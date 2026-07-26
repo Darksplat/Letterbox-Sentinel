@@ -51,16 +51,16 @@
 // USER SETTINGS
 // ============================================================
 
-const char* WIFI_SSID = "IOT_2.4";
-const char* WIFI_PASSWORD = "DarkPionCade";
+const char* WIFI_SSID = "CHANGE_WIFI_SSID";
+const char* WIFI_PASSWORD = "CHANGE_WIFI_PASSWORD";
 
 const char* MQTT_HOST = "192.168.0.211";
 const uint16_t MQTT_PORT = 1883;
 const char* MQTT_USERNAME = "mqtt";
-const char* MQTT_PASSWORD = "Userjobs01";
+const char* MQTT_PASSWORD = "CHANGE_MQTT_PASSWORD";
 
 const char* OTA_HOSTNAME = "letterbox-sentinel";
-const char* OTA_PASSWORD = "Userjobs01";
+const char* OTA_PASSWORD = "CHANGE_OTA_PASSWORD";
 
 IPAddress DEVICE_IP(192, 168, 0, 220);
 IPAddress GATEWAY_IP(192, 168, 0, 1);
