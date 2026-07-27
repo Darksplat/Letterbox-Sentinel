@@ -1,8 +1,12 @@
 # KiCad source
 
-The current authoritative Letterbox Sentinel PCB source is packaged as `Letterbox_Sentinel_KiCad_Project.zip` in this directory.
+The authoritative Letterbox Sentinel KiCad project consists of:
 
-The archive contains the KiCad project, schematic, PCB layout and current drill outputs. The PCB and schematic in the archive match the final files reviewed on 27 July 2026.
+- `Letterbox_Sentinel.kicad_pro`
+- `Letterbox_Sentinel.kicad_sch`
+- `Letterbox_Sentinel.kicad_pcb`
+
+The final reviewed source files were produced in KiCad 10 on 27 July 2026.
 
 ## Current design status
 
