@@ -1,0 +1,3845 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e2625038-ab52-4ef0-a819-a349524c764c")
+	(paper "A4")
+	(title_block
+		(title "Letterbox Sentinel")
+		(date "2026-07-27")
+		(rev "1.6")
+		(company "Jeremy Younger")
+		(comment 1 "Dual power input: XT60 female OR 2.1mm barrel jack")
+		(comment 2 "Wemos D1 Mini / TSR 1-2433 / IR break beam / BME280")
+		(comment 3 "Battery divider 330k / 100k")
+	)
+	(lib_symbols
+		(symbol "Letterbox:BARREL3"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Barrel_Jack"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "BARREL3_0_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BARREL3_1_1"
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "CENTRE+"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "GND_SW"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:CONN2"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "CONN2_0_1"
+				(rectangle
+					(start -2.54 3.81)
+					(end 2.54 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CONN2_1_1"
+				(pin passive line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:CONN3"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "CONN3_0_1"
+				(rectangle
+					(start -2.54 5.08)
+					(end 2.54 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CONN3_1_1"
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:CONN4"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "CONN4_0_1"
+				(rectangle
+					(start -2.54 6.35)
+					(end 2.54 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CONN4_1_1"
+				(pin passive line
+					(at -5.08 -3.81 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 3.81 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:CONN8"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "Conn_01x08"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "CONN8_0_1"
+				(rectangle
+					(start -2.54 11.43)
+					(end 2.54 -11.43)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CONN8_1_1"
+				(pin passive line
+					(at -5.08 -8.89 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -6.35 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -3.81 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "5"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 3.81 0)
+					(length 2.54)
+					(name "6"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 6.35 0)
+					(length 2.54)
+					(name "7"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 8.89 0)
+					(length 2.54)
+					(name "8"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:C_POL"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "C_POL_0_1"
+				(rectangle
+					(start -1.27 2.54)
+					(end 1.27 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_POL_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:DIODE"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "1N5819"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "DIODE_0_1"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "DIODE_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:Q_NPN"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "BC547"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "Q_NPN_0_1"
+				(rectangle
+					(start -2.54 3.81)
+					(end 2.54 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Q_NPN_1_1"
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:R"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -2.54 1.27)
+					(end 2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Letterbox:TSR3"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 0 4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Value" "TSR 1-2433"
+				(at 0 -4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(property "Description" "Letterbox Sentinel custom schematic symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1 1)
+					)
+				)
+			)
+			(symbol "TSR3_0_1"
+				(rectangle
+					(start -2.54 2.54)
+					(end 2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TSR3_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "D1 Mini USB end must face PCB edge for cable access"
+		(exclude_from_sim no)
+		(at 72.39 153.416 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "15441a1b-b5ed-46e7-a763-b94d07e23489")
+	)
+	(text "Dual input: XT60 female OR 5.5 x 2.1 mm centre-positive barrel jack"
+		(exclude_from_sim no)
+		(at 53.848 23.114 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+		)
+		(uuid "158ab837-39be-4ec0-a733-d40fc5150e30")
+	)
+	(text "IR TX: +3V3 and switched GND only (no signal wire)"
+		(exclude_from_sim no)
+		(at 71.374 143.51 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "2ba43073-a64a-4eca-b8d4-306dc537e9c4")
+	)
+	(text "BME280"
+		(exclude_from_sim no)
+		(at 230.632 113.284 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "2d359ab0-16e9-45de-837c-d8a3b820939c")
+	)
+	(text "C2 removed - TSR 1-2433 does not require the earlier 100uF input capacitor in this design"
+		(exclude_from_sim no)
+		(at 87.122 156.972 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "2f88fdd5-902f-48fd-acf0-cfdfcc2530f3")
+	)
+	(text "BME280: +3V3 / GND / SDA(D2) / SCL(D1)"
+		(exclude_from_sim no)
+		(at 68.072 150.114 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "52a848f9-100b-42d9-a801-22ff2f87a7b1")
+	)
+	(text "USE ONE POWER INPUT ONLY - DO NOT CONNECT BOTH"
+		(exclude_from_sim no)
+		(at 47.752 26.416 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+		)
+		(uuid "853cf0f7-a375-4a61-aa1b-e9121338c652")
+	)
+	(text "BATTERY VOLTAGE MONITOR"
+		(exclude_from_sim no)
+		(at 63.246 88.392 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "89134432-93ed-42cd-a4c5-e91fbba00db6")
+	)
+	(text "Jeremy Younger"
+		(exclude_from_sim no)
+		(at 44.704 19.05 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+		)
+		(uuid "94c19ddd-15d2-425a-aba8-a138d08e4274")
+	)
+	(text "WEMOS D1 MINI SOCKETS"
+		(exclude_from_sim no)
+		(at 120 78 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "b14fab9d-88d4-45e1-ba68-ecf730d72f4a")
+	)
+	(text "LETTERBOX SENTINEL REV 1.6"
+		(exclude_from_sim no)
+		(at 50.038 15.748 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+		)
+		(uuid "c555d852-1224-4e3c-8b3a-2ac66f137e1a")
+	)
+	(text "IR RECEIVER"
+		(exclude_from_sim no)
+		(at 231.394 78.486 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "d9245726-b368-4c2a-8f50-b17bfd38ecdb")
+	)
+	(text "IR TRANSMITTER SWITCH"
+		(exclude_from_sim no)
+		(at 231.902 37.338 0)
+		(effects
+			(font
+				(size 1.3 1.3)
+			)
+		)
+		(uuid "debb56e9-5e8e-4381-ab0a-49ed8aeb8438")
+	)
+	(text "IR RX: +3V3 / GND / SIG to D5"
+		(exclude_from_sim no)
+		(at 63.754 146.558 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "e2556835-d7f7-42c3-bed5-8c58c7c1fd86")
+	)
+	(text "Battery divider: 330k / 100k -> A0"
+		(exclude_from_sim no)
+		(at 39.624 29.718 0)
+		(effects
+			(font
+				(size 1.1 1.1)
+			)
+		)
+		(uuid "fdb91272-c1fe-4f3f-ba34-6c88379ee89f")
+	)
+	(wire
+		(pts
+			(xy 119.38 97.79) (xy 124.92 98.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0568c684-3231-4a3f-b74d-542bbdb38493")
+	)
+	(wire
+		(pts
+			(xy 153.67 105.41) (xy 154.92 106.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fd3685e-5ac4-40b9-8925-cc20990b8405")
+	)
+	(wire
+		(pts
+			(xy 60.96 93.98) (xy 55.08 95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "164a10e2-76be-42ff-87cd-cce77b2c1cd2")
+	)
+	(wire
+		(pts
+			(xy 27.94 49.53) (xy 29.92 50)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "302ade1c-fcfe-42fd-8876-2b75746264fa")
+	)
+	(wire
+		(pts
+			(xy 67 48.52) (xy 62.23 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31f2a420-8c96-4d57-b555-9902d891671d")
+	)
+	(wire
+		(pts
+			(xy 151.13 97.79) (xy 154.92 98.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3757b6a6-989d-4c66-ab97-0aaaefe13671")
+	)
+	(wire
+		(pts
+			(xy 133.35 49.53) (xy 130.81 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "380ff142-2996-49bc-97c5-a63d8bb71f5b")
+	)
+	(wire
+		(pts
+			(xy 118.11 49.53) (xy 120.65 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38fd7dd7-8b16-4f8b-a43c-9017c29630ac")
+	)
+	(wire
+		(pts
+			(xy 47.95 48.52) (xy 52.07 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b7f66f5-2cc6-4a55-ad9a-bd7ca48c12a8")
+	)
+	(wire
+		(pts
+			(xy 26.67 47.46) (xy 29.92 47.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fdb9af1-2f61-425d-81cd-f41d2c57d54e")
+	)
+	(wire
+		(pts
+			(xy 26.67 52.07) (xy 29.92 52.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58fefa08-42b3-4739-9ed2-11ec565caaec")
+	)
+	(wire
+		(pts
+			(xy 151.13 95.25) (xy 154.92 96.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ac7d769-7ffa-4390-9d86-694b4fe6ce82")
+	)
+	(wire
+		(pts
+			(xy 203.2 87.63) (xy 204.92 88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "669a4701-7ffb-47f9-aaaa-386cf7cb6bc8")
+	)
+	(wire
+		(pts
+			(xy 40.64 93.98) (xy 44.92 95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a1e5d9d-fe68-49b9-9ff2-7a7756ca7ef3")
+	)
+	(wire
+		(pts
+			(xy 242.57 87.63) (xy 244.92 87.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e64abd0-fa70-4096-b480-d2b7805977c4")
+	)
+	(wire
+		(pts
+			(xy 220.98 49.53) (xy 224.92 50)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f9aa113-ad6e-4620-83bf-a455a89be23d")
+	)
+	(wire
+		(pts
+			(xy 120.65 102.87) (xy 124.92 103.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7188a178-69fd-4674-8bfe-ae971944dbd2")
+	)
+	(wire
+		(pts
+			(xy 82.55 104.14) (xy 80.08 105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "775dfc80-103b-43a7-98d6-3e6fe10ebcc0")
+	)
+	(wire
+		(pts
+			(xy 213.36 49.53) (xy 210.08 50)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77d85c5d-7a85-4480-8068-df77afcd117d")
+	)
+	(wire
+		(pts
+			(xy 64.77 104.14) (xy 69.92 105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d5a11fe-4b4c-4df5-9318-8ba403a016a7")
+	)
+	(wire
+		(pts
+			(xy 85.09 49.53) (xy 91.44 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "891f0b87-3cfe-4888-8a49-7baa32898c7d")
+	)
+	(wire
+		(pts
+			(xy 153.67 90.17) (xy 154.92 91.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bcc428e-2c68-4a26-ba86-140e27108a3c")
+	)
+	(wire
+		(pts
+			(xy 196.85 59.69) (xy 199.92 60)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908dbf2f-acf5-4611-bd95-fc049eba4866")
+	)
+	(wire
+		(pts
+			(xy 153.67 107.95) (xy 154.92 108.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93354340-ce17-4156-bbd0-c66c377cf20d")
+	)
+	(wire
+		(pts
+			(xy 194.31 49.53) (xy 199.92 50)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9832b4f5-e8f8-4b84-b11b-d400e2fe4b28")
+	)
+	(wire
+		(pts
+			(xy 123.19 90.17) (xy 124.92 91.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a04f02a2-dfe3-4651-8296-63d7b4d8bcfb")
+	)
+	(wire
+		(pts
+			(xy 153.67 102.87) (xy 154.92 103.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a584450c-4de2-4231-8666-2707469a28b9")
+	)
+	(wire
+		(pts
+			(xy 240.03 92.71) (xy 244.92 92.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b00c7bf3-63d3-4fea-bccf-fb935d330a35")
+	)
+	(wire
+		(pts
+			(xy 119.38 92.71) (xy 124.92 93.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b026c1e7-9184-40aa-989c-feb728c6ceb9")
+	)
+	(wire
+		(pts
+			(xy 153.67 100.33) (xy 154.92 101.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b57fe5ce-5d37-4b45-8a5a-bfa9c9ea15a8")
+	)
+	(wire
+		(pts
+			(xy 242.57 90.17) (xy 244.92 90)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c229796a-add5-4d87-a022-73de061c206c")
+	)
+	(wire
+		(pts
+			(xy 123.19 105.41) (xy 124.92 106.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c26c44b2-3ad1-48c9-9ac1-0a8a49363665")
+	)
+	(wire
+		(pts
+			(xy 153.67 92.71) (xy 154.92 93.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5520171-c2a7-460e-b900-bcdd9d0c252d")
+	)
+	(wire
+		(pts
+			(xy 96.52 44.45) (xy 96.52 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6a59079-8c2e-42a6-991f-e5cd18416373")
+	)
+	(wire
+		(pts
+			(xy 123.19 95.25) (xy 124.92 96.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb72ebb0-19c9-46fb-9df4-9d674d8051c6")
+	)
+	(wire
+		(pts
+			(xy 219.71 87.63) (xy 215.08 88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce36d248-ed8e-4c20-b3d0-b3a520861aed")
+	)
+	(wire
+		(pts
+			(xy 104.14 49.53) (xy 101.6 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce51be1e-b92a-4576-8ef8-fbe6c617fddf")
+	)
+	(wire
+		(pts
+			(xy 240.03 46.99) (xy 235.08 47.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbdd4d4b-9d1a-4124-b8ee-1d255c347f52")
+	)
+	(wire
+		(pts
+			(xy 123.19 107.95) (xy 124.92 108.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7a4a0b3-fc66-4da0-a2f7-5eca07ca0150")
+	)
+	(wire
+		(pts
+			(xy 64.77 114.3) (xy 69.92 115)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c9cbe9-478c-4ec4-ac7a-70e58675f19c")
+	)
+	(wire
+		(pts
+			(xy 82.55 114.3) (xy 80.08 115)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee35b5c4-1ef5-41ce-a300-66c92d941036")
+	)
+	(wire
+		(pts
+			(xy 119.38 100.33) (xy 124.92 101.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9008224-0efa-437b-94dc-00e6b2aabbd7")
+	)
+	(wire
+		(pts
+			(xy 237.49 53.34) (xy 235.08 52.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd42b108-a986-4327-b424-eea01de9b8b9")
+	)
+	(wire
+		(pts
+			(xy 212.09 59.69) (xy 210.08 60)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff03fdf5-2422-4d55-a95c-d84b76202d0e")
+	)
+	(label "+5V"
+		(at 153.67 107.95 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "014b806c-b482-42b9-a523-7454d6b2ee09")
+	)
+	(label "I2C_SDA_D2"
+		(at 244.92 126.27 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "0e5b5b0c-3e6c-4768-a25b-30294035a5f7")
+	)
+	(label "BAT_SENSE_A0"
+		(at 60.96 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "0ed7c714-fb3c-4687-8dcf-6c1418a988c5")
+	)
+	(label "GND"
+		(at 244.92 123.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "1647d519-aa66-4829-b6bb-be6c37b21136")
+	)
+	(label "BAT_RAW+"
+		(at 47.95 48.52 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "19f5896a-7639-4deb-8724-e236e5d4f75a")
+	)
+	(label "+3V3"
+		(at 254.92 48.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "1a27c4aa-ff4e-461d-9441-f1489e7011e2")
+	)
+	(label "BAT_SENSE_A0"
+		(at 119.38 92.71 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "1b8b376c-b6ff-413a-af23-5ec609ce2bec")
+	)
+	(label "D4"
+		(at 153.67 102.87 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "1df8f0d5-c4d6-461b-97c0-581828082a67")
+	)
+	(label "BAT_RAW+"
+		(at 26.67 52.07 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "1f890a21-3448-4ada-bf49-a1ff5e5da313")
+	)
+	(label "GND"
+		(at 212.09 59.69 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "2683bb61-99cb-4998-8dee-755b5cb207d1")
+	)
+	(label "D7_SPARE"
+		(at 120.65 102.87 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "2bdf2abb-7b03-461b-9a5e-ac01a10a8d5d")
+	)
+	(label "I2C_SDA_D2"
+		(at 151.13 97.79 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "396c7292-cbda-4447-8791-5601bb03d2bf")
+	)
+	(label "GND"
+		(at 27.94 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "3dd509da-2372-4266-aea5-cc99b8b67f5c")
+	)
+	(label "I2C_SCL_D1"
+		(at 151.13 95.25 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "46e11617-707c-4869-b193-6d38db76018f")
+	)
+	(label "GND"
+		(at 153.67 105.41 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "4770b7e0-4fea-43ad-a199-96ec866034be")
+	)
+	(label "+3V3"
+		(at 104.14 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "4a5e1609-8603-4197-af2b-00ea9975622c")
+	)
+	(label "+3V3"
+		(at 242.57 87.63 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "4e8f8d2e-2849-47fb-b23a-0e92e3ba16ea")
+	)
+	(label "IR_RX_SIG_D5"
+		(at 240.03 92.71 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "4f244cde-a926-4b38-9454-0d1771fe5bd4")
+	)
+	(label "+3V3"
+		(at 118.11 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "60dcd7e7-6f80-4436-a53c-ded5e3e6b43e")
+	)
+	(label "Q1_BASE"
+		(at 220.98 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "613a4b53-2398-4c72-b637-43b92b280eb6")
+	)
+	(label "+3V3"
+		(at 203.2 87.63 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "6afcf8c4-9176-406a-9cfd-0adb9ca055ba")
+	)
+	(label "IR_RX_SIG_D5"
+		(at 119.38 97.79 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "7043a12f-07e2-4e8c-b8f1-5b46dde05e04")
+	)
+	(label "D8"
+		(at 123.19 105.41 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "740e9c87-2561-47d7-afb6-0eada9bad0fb")
+	)
+	(label "IR_TX_SW_GND"
+		(at 254.92 51.27 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "74fffa17-f9c0-493f-a62a-b1209c020b2c")
+	)
+	(label "TX"
+		(at 153.67 90.17 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "751f3492-8e08-489c-bd7e-b91533f02b7f")
+	)
+	(label "VIN_PROTECTED"
+		(at 67 48.52 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "761340cb-e0aa-4322-a485-55bdae726cd8")
+	)
+	(label "GND"
+		(at 242.57 90.17 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "7763efa9-a500-4625-b62a-a62afb92b4d6")
+	)
+	(label "I2C_SCL_D1"
+		(at 244.92 128.81 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "7c6fb180-7dce-406f-a98c-e814cbc21663")
+	)
+	(label "Q1_BASE"
+		(at 196.85 59.69 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "7ed24fc3-9b90-4147-b80f-382006c3441a")
+	)
+	(label "RST"
+		(at 123.19 90.17 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "83ea92cf-6c5c-40d4-81fd-b2de58c451ef")
+	)
+	(label "VIN_PROTECTED"
+		(at 85.09 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "8609dddd-34fe-4f43-aa0e-825c14b4722f")
+	)
+	(label "GND"
+		(at 237.49 53.34 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "8b0c3ffd-be98-4e13-b3b1-72bb61f51a6c")
+	)
+	(label "GND"
+		(at 82.55 114.3 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "8bcab0db-0c3d-4262-9e87-3cd72f7e774a")
+	)
+	(label "GND"
+		(at 96.52 41.91 90)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "959e4268-30f6-4e3b-888b-08ce0fbc630b")
+	)
+	(label "IR_RX_SIG_D5"
+		(at 219.71 87.63 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "9713fc90-1c42-4083-9707-847338525c18")
+	)
+	(label "Q1_BASE"
+		(at 213.36 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "98865ed3-6e34-4be6-a6bb-1b5ff95118da")
+	)
+	(label "IR_TX_SW_GND"
+		(at 240.03 46.99 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "990e02cd-4572-4539-b0e0-2ef088c02d18")
+	)
+	(label "BAT_RAW+"
+		(at 29.92 65.73 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "a67a2b26-882b-4ede-b204-1d05836291e9")
+	)
+	(label "GND"
+		(at 29.92 68.27 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "b4f3737f-607e-41cb-aa07-78023356d52f")
+	)
+	(label "GND"
+		(at 26.67 47.46 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "b92cef61-ad60-4e88-b27a-08464348e3e3")
+	)
+	(label "D0"
+		(at 123.19 95.25 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "ba8689c9-b805-4b7d-8f20-3ee2c083e1f5")
+	)
+	(label "D3"
+		(at 153.67 100.33 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "bad82962-8c21-4500-9cd7-c746264bd34a")
+	)
+	(label "BAT_SENSE_A0"
+		(at 64.77 104.14 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "c3a4d48b-22b6-4b6e-8992-153d8b2f70a6")
+	)
+	(label "IR_PWR_CTL_D6"
+		(at 119.38 100.33 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "c489dd9c-ac69-4ba9-90fa-411d60e6af31")
+	)
+	(label "GND"
+		(at 82.55 104.14 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "c92a0347-fe87-4cf7-9cbc-56ded7710d27")
+	)
+	(label "+3V3"
+		(at 244.92 121.19 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "cf3f94d1-7d31-4b73-85a4-4a8105757f4b")
+	)
+	(label "BAT_SENSE_A0"
+		(at 64.77 114.3 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "d5023e7f-d006-41bf-b825-ba0bb80f3048")
+	)
+	(label "BAT_RAW+"
+		(at 40.64 93.98 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "dd9bb886-f521-424b-8b8f-a5af9cc84040")
+	)
+	(label "RX"
+		(at 153.67 92.71 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "e1788620-a64f-4abd-9b5f-8dde6bac8698")
+	)
+	(label "GND"
+		(at 133.35 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "e889ab85-7109-40e4-92e2-acf9279c5c6d")
+	)
+	(label "+3V3"
+		(at 123.19 107.95 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "f5a17864-07cf-4c38-9ef8-f21a12bf5e8b")
+	)
+	(label "IR_PWR_CTL_D6"
+		(at 194.31 49.53 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+		)
+		(uuid "f9efb2dc-e443-4e67-aede-4f9b3a8b2e2f")
+	)
+	(symbol
+		(lib_id "Letterbox:CONN2")
+		(at 35 67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0a389548-3d8b-4360-b6bc-2e3465b7506e")
+		(property "Reference" "J2"
+			(at 35 62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "XT60PW-F FEMALE"
+			(at 35 72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
+			(at 35 67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35 67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 35 67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d0c737c1-f7ef-44c1-9cdc-c77085c00d90")
+		)
+		(pin "2"
+			(uuid "23e53df3-e7cd-4b6a-98a9-4b9ed1c3b04d")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:CONN8")
+		(at 160 100 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18f918d3-f569-48f5-9159-259b8be61adc")
+		(property "Reference" "J_WEMOS_R1"
+			(at 160.02 87.122 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "WEMOS RIGHT"
+			(at 160.02 116.078 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
+			(at 160 100 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160 100 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 160 100 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a73e49ee-8b16-4ef4-a524-6e37f09c1872")
+		)
+		(pin "2"
+			(uuid "580547cb-a5e4-435f-8716-dd41e9edd837")
+		)
+		(pin "3"
+			(uuid "bedcde3d-bc5b-4ffe-8b21-31e4ab749738")
+		)
+		(pin "4"
+			(uuid "69bb16b1-99bf-4c30-ad55-c8444de8d080")
+		)
+		(pin "5"
+			(uuid "ba77a626-255e-40c4-916e-aff73d57d979")
+		)
+		(pin "6"
+			(uuid "f6acffb4-9883-4f94-a11a-6eade94c0fbe")
+		)
+		(pin "7"
+			(uuid "31eae4f7-b9bd-4167-92a2-fbe878953366")
+		)
+		(pin "8"
+			(uuid "197dddb7-e8aa-4bd2-a218-97e41c6ff288")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "J_WEMOS_R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:CONN8")
+		(at 130 100 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1f0483a8-df39-44d7-a820-b43e067aff77")
+		(property "Reference" "J_WEMOS_L1"
+			(at 130.302 86.614 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "WEMOS LEFT"
+			(at 130.048 113.284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
+			(at 130 100 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130 100 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 130 100 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f813a2d-32e7-4155-b7f1-903a883ed55f")
+		)
+		(pin "2"
+			(uuid "4b1a934c-a53e-45b1-afb3-3d0beb1a123c")
+		)
+		(pin "3"
+			(uuid "42e5ac65-7449-4ff8-9b75-6f8f7fda5879")
+		)
+		(pin "4"
+			(uuid "e72508a7-0588-4ff9-8e52-472256736de6")
+		)
+		(pin "5"
+			(uuid "9fdd792a-2548-43a1-a471-4647ff5b2d12")
+		)
+		(pin "6"
+			(uuid "e268158e-a600-48db-a3e7-9fd9ea5792ef")
+		)
+		(pin "7"
+			(uuid "4c5aaf38-c19e-45ba-bb04-5e0fdbebfdc5")
+		)
+		(pin "8"
+			(uuid "b777de22-97f5-4e0e-a0f3-74250689370a")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "J_WEMOS_L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:DIODE")
+		(at 57.15 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5095f3ee-d4ec-42b3-8ed5-f16897392319")
+		(property "Reference" "D1"
+			(at 57.15 44.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 57.094 53.092 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 57.15 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 57.15 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc4b95b5-189a-4f27-99f8-bb463d156340")
+		)
+		(pin "2"
+			(uuid "18f91ab1-5a24-4b7a-bc2d-51ffcc3c266d")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:R")
+		(at 205 60 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6d120cdc-f1b9-4744-8955-2675df86c6ed")
+		(property "Reference" "R4"
+			(at 204.978 56.896 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 205 65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 205 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 205 60 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9a39f46a-d7dc-4f13-8dfc-1d14377be184")
+		)
+		(pin "2"
+			(uuid "3c002b8f-3c23-4058-a1ab-3e1515142b78")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:TSR3")
+		(at 96.52 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "711ec1a2-cdce-46bc-b54e-3cda2575d4f8")
+		(property "Reference" "U1"
+			(at 96.774 53.848 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "TSR 1-2433 SOCKETED"
+			(at 96.266 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(at 96.52 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 96.52 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9eb1967a-0fee-48ab-a054-9a5c811f7a77")
+		)
+		(pin "2"
+			(uuid "da5febd2-92fb-4fff-88fe-ad46a5e0e776")
+		)
+		(pin "3"
+			(uuid "f76d652e-20af-4248-b879-84f29a8ed017")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:BARREL3")
+		(at 35 50 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "85465f6a-05ee-4c1a-81af-64fdc5168b4f")
+		(property "Reference" "J1"
+			(at 34.798 43.942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "5.5x2.1mm CENTRE +"
+			(at 35.052 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal"
+			(at 35 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 35 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98b91104-1022-46b0-96b7-462136490903")
+		)
+		(pin "2"
+			(uuid "31a312e5-410c-4137-8adc-3374507ed859")
+		)
+		(pin "3"
+			(uuid "e920ad53-47e2-43a0-9e58-9697b9913ebb")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:CONN2")
+		(at 260 50 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9e3bc948-7334-4b4e-bbda-5ac56bdfe107")
+		(property "Reference" "J3"
+			(at 260 45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "IR TX FEMALE SOCKET"
+			(at 260 55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 260 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 260 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ab4bd426-ad9e-4416-816d-3a5c0c97917d")
+		)
+		(pin "2"
+			(uuid "a51cbd59-4c72-4e6d-bfc8-aa2b5eb25faf")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:R")
+		(at 50 95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9edd2b3a-340c-4b02-af8f-fbaef9a184a9")
+		(property "Reference" "R1"
+			(at 50.038 91.186 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "330k"
+			(at 50.038 98.552 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 50 95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50 95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 50 95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d4c106c-5bd3-4f45-94a3-ebbf4cba1c7e")
+		)
+		(pin "2"
+			(uuid "e40fd135-f595-49c5-b344-7a5d91c11931")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:CONN3")
+		(at 250 90 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a6a172d9-46af-4648-9e57-4052d9973d43")
+		(property "Reference" "J4"
+			(at 249.936 83.566 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "IR RX FEMALE SOCKET"
+			(at 250.19 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(at 250 90 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250 90 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 250 90 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a9a05b7-3c70-459e-ac34-4f967d8a3ad3")
+		)
+		(pin "2"
+			(uuid "9658e618-6c60-4414-80f3-b7b1fd0b5b54")
+		)
+		(pin "3"
+			(uuid "63ce559d-ecb9-4933-82d0-8ffe20b44e81")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:Q_NPN")
+		(at 230 50 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad366685-079b-4b16-b4e8-e65af94759ab")
+		(property "Reference" "Q1"
+			(at 230 45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "BC547 C-B-E"
+			(at 230 55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 230 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 230 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 230 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11c1f0e5-7ef7-40cb-96b0-904eff5cdee5")
+		)
+		(pin "2"
+			(uuid "02039015-267e-49ee-b5e7-39f287a79695")
+		)
+		(pin "3"
+			(uuid "a4c5d97b-0968-41ca-b4a4-ccb12110d845")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:R")
+		(at 210 88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b31c8ca5-3d84-4075-a9eb-4d7afa615b83")
+		(property "Reference" "R5"
+			(at 210 83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10k PULL-UP"
+			(at 210 93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 210 88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210 88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 210 88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c12fdb5-a772-4eb9-8bf7-1c2ccd965cd7")
+		)
+		(pin "2"
+			(uuid "c4618dd7-7bc6-4933-86dc-05e2a53043fe")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:C_POL")
+		(at 125.73 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b7f045d7-8d00-4959-9aa8-d3c3c2c414b5")
+		(property "Reference" "C1"
+			(at 125.73 44.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1000uF 25V"
+			(at 125.73 54.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
+			(at 125.73 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 125.73 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce695a99-6dfc-489e-ade7-c1ab55cc0850")
+		)
+		(pin "2"
+			(uuid "c7ebdc35-937d-4398-8309-56eb658b5ec0")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:R")
+		(at 205 50 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de77ee1c-812f-4b89-8b2c-666d9209b70d")
+		(property "Reference" "R3"
+			(at 205 45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 204.978 52.832 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 205 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 205 50 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bf4221f7-b506-477b-92c6-fb882acf5508")
+		)
+		(pin "2"
+			(uuid "c2de7e68-a8c5-4746-9bcd-2a901d1c71e5")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:R")
+		(at 75 105 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e0ad418d-917c-4ca4-8722-2be2054f2618")
+		(property "Reference" "R2"
+			(at 74.93 100.584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 74.93 107.696 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 75 105 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 75 105 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 75 105 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7fe5f4f1-e1b7-4978-830c-20384fa6909f")
+		)
+		(pin "2"
+			(uuid "5ba56049-5b58-4066-bdfa-90c7f5aa9f13")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:CONN4")
+		(at 250 125 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e4e8b66e-3e05-482e-9461-f37ba71d0294")
+		(property "Reference" "J5"
+			(at 250 120 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "BME280 FEMALE SOCKET"
+			(at 250 130 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 250 125 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250 125 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 250 125 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8bf6adcb-7d59-41fa-9447-0860a9aff1bf")
+		)
+		(pin "2"
+			(uuid "d987fb60-dd66-4746-9c56-36841aac091a")
+		)
+		(pin "3"
+			(uuid "d7862af4-8662-4841-bca7-2852c3b8ed79")
+		)
+		(pin "4"
+			(uuid "9336e8b1-daa3-420c-b162-5d9c454d4c60")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Letterbox:DIODE")
+		(at 75 115 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fe52094a-f285-4e70-af00-723027bcf3cc")
+		(property "Reference" "D2"
+			(at 74.93 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1N5819 ADC CLAMP"
+			(at 75 120 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 75 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 75 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" "Letterbox Sentinel Rev 1.6"
+			(at 75 115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fba0e1f-e012-49f1-893a-4915e34213a3")
+		)
+		(pin "2"
+			(uuid "9f095c26-f6fa-49a7-8b3a-c458dac4ebb3")
+		)
+		(instances
+			(project "Letterbox_Sentinel_REV1_9_FIXED"
+				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
