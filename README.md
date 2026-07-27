@@ -45,9 +45,28 @@ Deep sleep is performed in chunks of up to 60 minutes. The final sleep before 07
 - IR emitter
 - BC547 transistor for IR emitter switching
 - 2S 18650 battery pack
-- 3.3 V regulator
+- TRACO Power TSR 1-2433 3.3 V switching regulator
 - 330 kOhm / 100 kOhm battery voltage divider
 - Optional 100 nF capacitor on A0
+
+### Custom PCB
+
+A custom 2-layer KiCad carrier PCB has now been developed for Letterbox Sentinel. The hardware design is documented under [`hardware/`](hardware/README.md).
+
+Key PCB features:
+
+- Approximately **64 mm x 50 mm**.
+- Socketed Wemos D1 Mini for serviceability.
+- Socketed **TRACO TSR 1-2433** 3.3 V regulator.
+- Choice of **5.5 x 2.1 mm centre-positive barrel jack** or **AMASS XT60PW-F female** battery input.
+- Raw 2S battery monitoring before regulation using the 330 kOhm / 100 kOhm divider.
+- 1000 uF / 25 V reservoir capacitor on the 3.3 V rail.
+- BC547-switched IR transmitter output.
+- Female sockets for IR TX, IR RX and BME280.
+- Bottom-layer GND copper plane.
+- Through-hole construction for practical hand assembly and repair.
+
+The final routed board passed KiCad DRC with **0 errors and 0 unconnected pads** during the manufacturing review.
 
 ## Pinout
 
