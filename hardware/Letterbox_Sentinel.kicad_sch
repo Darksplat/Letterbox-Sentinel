@@ -1923,26 +1923,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 114.3) (xy 69.92 115)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8c9cbe9-478c-4ec4-ac7a-70e58675f19c")
-	)
-	(wire
-		(pts
-			(xy 82.55 114.3) (xy 80.08 115)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee35b5c4-1ef5-41ce-a300-66c92d941036")
-	)
-	(wire
-		(pts
 			(xy 119.38 100.33) (xy 124.92 101.27)
 		)
 		(stroke
@@ -2260,15 +2240,6 @@
 		(uuid "8b0c3ffd-be98-4e13-b3b1-72bb61f51a6c")
 	)
 	(label "GND"
-		(at 82.55 114.3 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-		)
-		(uuid "8bcab0db-0c3d-4262-9e87-3cd72f7e774a")
-	)
-	(label "GND"
 		(at 96.52 41.91 90)
 		(effects
 			(font
@@ -2384,15 +2355,6 @@
 			)
 		)
 		(uuid "cf3f94d1-7d31-4b73-85a4-4a8105757f4b")
-	)
-	(label "BAT_SENSE_A0"
-		(at 64.77 114.3 0)
-		(effects
-			(font
-				(size 1 1)
-			)
-		)
-		(uuid "d5023e7f-d006-41bf-b825-ba0bb80f3048")
 	)
 	(label "BAT_RAW+"
 		(at 40.64 93.98 0)
@@ -2510,7 +2472,7 @@
 			(uuid "23e53df3-e7cd-4b6a-98a9-4b9ed1c3b04d")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "J2")
 					(unit 1)
@@ -2607,7 +2569,7 @@
 			(uuid "197dddb7-e8aa-4bd2-a218-97e41c6ff288")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "J_WEMOS_R1")
 					(unit 1)
@@ -2704,7 +2666,7 @@
 			(uuid "b777de22-97f5-4e0e-a0f3-74250689370a")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "J_WEMOS_L1")
 					(unit 1)
@@ -2783,7 +2745,7 @@
 			(uuid "18f91ab1-5a24-4b7a-bc2d-51ffcc3c266d")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "D1")
 					(unit 1)
@@ -2862,7 +2824,7 @@
 			(uuid "3c002b8f-3c23-4058-a1ab-3e1515142b78")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "R4")
 					(unit 1)
@@ -2944,7 +2906,7 @@
 			(uuid "f76d652e-20af-4248-b879-84f29a8ed017")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "U1")
 					(unit 1)
@@ -3026,7 +2988,7 @@
 			(uuid "e920ad53-47e2-43a0-9e58-9697b9913ebb")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "J1")
 					(unit 1)
@@ -3105,7 +3067,7 @@
 			(uuid "a51cbd59-4c72-4e6d-bfc8-aa2b5eb25faf")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "J3")
 					(unit 1)
@@ -3184,7 +3146,7 @@
 			(uuid "e40fd135-f595-49c5-b344-7a5d91c11931")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "R1")
 					(unit 1)
@@ -3266,7 +3228,7 @@
 			(uuid "63ce559d-ecb9-4933-82d0-8ffe20b44e81")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "J4")
 					(unit 1)
@@ -3348,7 +3310,7 @@
 			(uuid "a4c5d97b-0968-41ca-b4a4-ccb12110d845")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "Q1")
 					(unit 1)
@@ -3427,7 +3389,7 @@
 			(uuid "c4618dd7-7bc6-4933-86dc-05e2a53043fe")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "R5")
 					(unit 1)
@@ -3506,7 +3468,7 @@
 			(uuid "c7ebdc35-937d-4398-8309-56eb658b5ec0")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "C1")
 					(unit 1)
@@ -3585,7 +3547,7 @@
 			(uuid "c2de7e68-a8c5-4746-9bcd-2a901d1c71e5")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "R3")
 					(unit 1)
@@ -3664,7 +3626,7 @@
 			(uuid "5ba56049-5b58-4066-bdfa-90c7f5aa9f13")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "R2")
 					(unit 1)
@@ -3749,88 +3711,9 @@
 			(uuid "9336e8b1-daa3-420c-b162-5d9c454d4c60")
 		)
 		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
+			(project "Letterbox_Sentinel"
 				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Letterbox:DIODE")
-		(at 75 115 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fe52094a-f285-4e70-af00-723027bcf3cc")
-		(property "Reference" "D2"
-			(at 74.93 111.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "1N5819 ADC CLAMP"
-			(at 75 120 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 75 115 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 75 115 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Description" "Letterbox Sentinel Rev 1.6"
-			(at 75 115 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6fba0e1f-e012-49f1-893a-4915e34213a3")
-		)
-		(pin "2"
-			(uuid "9f095c26-f6fa-49a7-8b3a-c458dac4ebb3")
-		)
-		(instances
-			(project "Letterbox_Sentinel_REV1_9_FIXED"
-				(path "/e2625038-ab52-4ef0-a819-a349524c764c"
-					(reference "D2")
 					(unit 1)
 				)
 			)
