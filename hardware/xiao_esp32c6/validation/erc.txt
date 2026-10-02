@@ -1,0 +1,60 @@
+ERC report (2026-10-01T22:02:26, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(35.56 mm, 49.53 mm): Symbol J1 [BARREL3]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(35.56 mm, 67.31 mm): Symbol J2 [CONN2]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(49.53 mm, 95.25 mm): Symbol R1 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(57.15 mm, 49.53 mm): Symbol D1 [DIODE]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(74.93 mm, 105.41 mm): Symbol R2 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(95.25 mm, 80.01 mm): Symbol C2 [ADC_FILTER]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(96.52 mm, 49.53 mm): Symbol U1 [TSR3]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(125.73 mm, 49.53 mm): Symbol C1 [C_POL]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(129.54 mm, 100.33 mm): Symbol J_XIAO_L1 [CONN7]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(160.02 mm, 100.33 mm): Symbol J_XIAO_R1 [CONN7]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(204.47 mm, 49.53 mm): Symbol R3 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(204.47 mm, 59.69 mm): Symbol R4 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(209.55 mm, 87.63 mm): Symbol R5 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(229.87 mm, 49.53 mm): Symbol Q1 [Q_NPN]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(250.19 mm, 90.17 mm): Symbol J4 [CONN3]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LetterboxC6'
+    ; warning
+    @(260.35 mm, 49.53 mm): Symbol J3 [CONN2]
+
+ ** ERC messages: 16  Errors 0  Warnings 16
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
