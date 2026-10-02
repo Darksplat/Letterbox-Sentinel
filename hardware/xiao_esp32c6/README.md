@@ -1,6 +1,6 @@
-# Letterbox Sentinel — XIAO ESP32-C6 carrier revision C6-1
+# Letterbox Sentinel — XIAO ESP32-C6 carrier revision C6-2
 
-This is a separate hardware revision for the **Seeed Studio XIAO ESP32-C6**, retaining the 64 × 50 mm carrier outline and 2S battery inputs. The original ESP8266 design remains in the parent hardware directory.
+This is a separate hardware revision for the **Seeed Studio XIAO ESP32-C6**, with a vertical **AMASS XT60PB-M** battery connector and **JST-XH** IR connectors, retaining the 64 × 50 mm carrier outline and 2S battery inputs. The original ESP8266 design remains in the parent hardware directory.
 
 ## Changes
 
@@ -13,6 +13,24 @@ This is a separate hardware revision for the **Seeed Studio XIAO ESP32-C6**, ret
 - Correct D1's physical footprint numbering: **pad 1 = cathode = VIN_PROTECTED; pad 2 = anode = BAT_RAW+**. The diode's band faces the protected regulator supply.
 - Correct Q1 to BC547's C-B-E pin order: **pad 1 collector = IR_TX_SW_GND; pad 2 base = Q1_BASE; pad 3 emitter = GND**. Verify the actual transistor manufacturer's pinout when assembling.
 - Reroute both copper layers; the original ground pour is replaced by routed ground connections. A provisional clear area is reserved near the module's antenna end. RF clearance and reception must be confirmed with the actual XIAO and letterbox enclosure; this is not a manufacturer-approved RF layout.
+
+## Connector revision C6-2
+
+J2 is **AMASS XT60PB-M**, a male vertical PCB connector (male metal pins). The custom footprint has 7.20 mm pin spacing, 4.50 mm finished plated holes for the manufacturer's 4.25 mm PCB pins, and a conservative 16 × 8.1 mm housing envelope. It has no horizontal mounting tabs. Pad 1 is battery negative/GND on the chamfered end; pad 2 is battery positive/BAT_RAW+. PCB silkscreen marks + and −. Check polarity against the moulded markings on the actual connector before assembling.
+
+J3 and J4 are keyed **JST-XH 2.50 mm** through-hole headers. XH provides friction retention; it is not a release-tab positive latch. The 2-pin and 3-pin housings prevent TX/RX cable interchange.
+
+| Connector | PCB header | Cable housing | Pin 1 | Pin 2 | Pin 3 |
+|---|---|---|---|---|---|
+| J3, IR transmitter | B2B-XH-A | XHP-2 | Red, +3V3 | Black, transistor-switched return | — |
+| J4, IR receiver | B3B-XH-A | XHP-3 | Red, +3V3 | Black, GND | White/yellow, receiver signal |
+
+Cable pin numbers refer to the numbered PCB pads and must be checked from the mating orientation; a cable viewed from the wire-entry end appears mirrored. Existing Dupont terminals do not fit XH housings. Replace them with XH crimp contacts selected for the sensor wire gauge, or splice on matching pre-crimped pigtails with insulated, strain-relieved joints. JST's XH pitch is **2.50 mm**, not generic 2.54 mm.
+
+Primary connector drawings:
+- Amass XT60PB-M V1.2: https://www.tme.com/Document/5b672a89892b7155d7a6087589424d5d/XT60PB-M.pdf
+- JST XH: https://www.jst-mfg.com/product/pdf/eng/eXH.pdf
+- IR sensor wiring: https://learn.adafruit.com/ir-breakbeam-sensors/arduino
 
 ## Firmware pin mapping
 

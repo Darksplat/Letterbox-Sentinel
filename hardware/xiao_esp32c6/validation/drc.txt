@@ -1,11 +1,11 @@
 ** Drc report for Letterbox_Sentinel_C6.kicad_pcb **
-** Created on 2026-10-01T22:02:26 **
+** Created on 2026-10-02T13:02:06 **
 ** Report includes: Errors, Warnings **
 
 ** Found 16 DRC violations **
 [lib_footprint_issues]: The footprint library 'LetterboxC6' is not enabled in the current configuration
     Local override; warning
-    @(120.1000 mm, 91.1500 mm): Footprint J2
+    @(113.0000 mm, 84.5000 mm): Footprint J2
 [lib_footprint_issues]: The footprint library 'LetterboxC6' is not enabled in the current configuration
     Local override; warning
     @(91.9200 mm, 84.5000 mm): Footprint D1
@@ -14,7 +14,7 @@
     @(89.5200 mm, 105.5000 mm): Footprint R3
 [lib_footprint_issues]: The footprint library 'LetterboxC6' is not enabled in the current configuration
     Local override; warning
-    @(123.0000 mm, 99.4200 mm): Footprint J4
+    @(117.5000 mm, 112.0000 mm): Footprint J4
 [lib_footprint_issues]: The footprint library 'LetterboxC6' is not enabled in the current configuration
     Local override; warning
     @(87.9200 mm, 96.0000 mm): Footprint R1
@@ -38,7 +38,7 @@
     @(118.0000 mm, 104.0000 mm): Footprint Q1
 [lib_footprint_issues]: The footprint library 'LetterboxC6' is not enabled in the current configuration
     Local override; warning
-    @(111.0000 mm, 100.2300 mm): Footprint J3
+    @(110.0000 mm, 94.0000 mm): Footprint J3
 [lib_footprint_issues]: The footprint library 'LetterboxC6' is not enabled in the current configuration
     Local override; warning
     @(83.0000 mm, 86.5400 mm): Footprint U1
